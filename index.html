@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JacketZone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">JacketZone</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#" id="cart-btn">Cart 🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Premium Jackets for Every Season</h1>
+      <p>Stylish. Durable. Comfortable.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Jackets</h2>
+    <div class="product-grid">
+      <!-- Jacket 1 -->
+      <div class="product-card">
+        <img src="images/jacket1.jpg" alt="Jacket 1">
+        <h3>Winter Shield Jacket</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart('Winter Shield Jacket', 3999)">Add to Cart</button>
+      </div>
+
+      <!-- Jacket 2 -->
+      <div class="product-card">
+        <img src="images/jacket2.jpg" alt="Jacket 2">
+        <h3>Urban Street Jacket</h3>
+        <p>₹2,499</p>
+        <button onclick="addToCart('Urban Street Jacket', 2499)">Add to Cart</button>
+      </div>
+
+      <!-- Jacket 3 -->
+      <div class="product-card">
+        <img src="images/jacket3.jpg" alt="Jacket 3">
+        <h3>Rain Warrior Coat</h3>
+        <p>₹3,299</p>
+        <button onclick="addToCart('Rain Warrior Coat', 3299)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 JacketZone. Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

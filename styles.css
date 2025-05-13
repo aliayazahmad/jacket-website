@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #1e1e2f;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('images/jacket1.jpg') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.products {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+}
+
+.product-card p {
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.product-card button {
+  background: #1e1e2f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
