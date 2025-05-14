@@ -15,6 +15,7 @@ header {
   padding: 20px 40px;
   background: #1e1e2f;
   color: white;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -28,8 +29,16 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+#cart-btn {
+  cursor: pointer;
+}
+
 .hero {
-  background: url('../images/DOC-20250512-WA0001.jpg') no-repeat center/cover;
+  background: url('images/DOC-20250512-WA0001.jpg') no-repeat center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -42,14 +51,18 @@ nav a {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  height: 100%; width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-text {
   position: relative;
   z-index: 1;
+  max-width: 700px;
+  padding: 0 20px;
 }
 
 .hero-text h1 {
@@ -66,10 +79,15 @@ nav a {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c2185b;
 }
 
 .products {
-  padding: 60px 40px;
+  padding: 5rem 5%;
   text-align: center;
 }
 
@@ -85,7 +103,7 @@ nav a {
   background: white;
   padding: 20px;
   max-width: 250px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
@@ -111,6 +129,12 @@ nav a {
   margin-top: 10px;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #c2185b;
 }
 
 footer {
@@ -119,9 +143,14 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
 @media (max-width: 768px) {
   .hero-text h1 {
     font-size: 2rem;
+  }
+
+  .hero-text {
+    padding: 0 20px;
   }
 
   header {
@@ -139,20 +168,3 @@ footer {
     align-items: center;
   }
 }
-.btn:hover,
-.product-card button:hover {
-  background-color: #c2185b;
-  transition: background-color 0.3s ease;
-}
-#cart-btn {
-  cursor: pointer;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-.product-card button {
-  width: 100%;
-}
-
-
