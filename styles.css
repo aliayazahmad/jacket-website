@@ -29,7 +29,7 @@ nav a {
 }
 
 .hero {
-  background: url('images/jacket1.jpg') no-repeat center/cover;
+  background: url('../images/DOC-20250512-WA0001.jpg') no-repeat center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -119,3 +119,40 @@ footer {
   padding: 20px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px 10px 0 0;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.btn:hover,
+.product-card button:hover {
+  background-color: #c2185b;
+  transition: background-color 0.3s ease;
+}
+#cart-btn {
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.product-card button {
+  width: 100%;
+}
+
+
