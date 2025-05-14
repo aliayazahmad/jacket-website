@@ -17,7 +17,17 @@ function addToCart(name, price) {
 
   alert(`${name} added to cart!`);
 }
+
 function showCart() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   console.log("Cart Items:", cart);
 }
+
+// 🧹 Clear the cart
+function clearCart() {
+  localStorage.removeItem("cart");
+  cartCount = 0;
+  document.getElementById('cart-count').textContent = cartCount;
+  alert("Cart cleared!");
+}
+
